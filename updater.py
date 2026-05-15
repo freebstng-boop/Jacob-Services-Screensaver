@@ -4,6 +4,8 @@ import tkinter as tk
 from tkinter import messagebox
 import os
 
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
 # Configuration
 VERSION_URL = "https://github.com/freebstng-boop/Jacob-Services-Screensaver.git"
 LOCAL_VERSION_FILE = "version.txt"
