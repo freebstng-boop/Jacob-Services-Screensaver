@@ -1,8 +1,7 @@
 import tkinter as tk
 import os
 from time import strftime
-from PIL import Image, ImageTk, ImageDraw
-
+from PIL import Image, ImageTk
 # 1. Fixed Display for your Pi 3A+
 os.environ['DISPLAY'] = ':1'
 
