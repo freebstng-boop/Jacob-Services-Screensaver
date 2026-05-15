@@ -31,16 +31,23 @@ def check_for_updates():
         print(f"Update check failed: {e}")
 
 def prompt_update(new_version):
-    # Create a hidden root for the messagebox
     root = tk.Tk()
-    root.withdraw()
+    root.withdraw() 
+    
+    # This ensures the popup appears on top of the fullscreen screensaver
     root.attributes("-topmost", True)
     
-    answer = messagebox.askyesno("Update Available", 
-                                f"A new version ({new_version}) is available. Update now?")
+    # Clean Title and Message
+    title_text = "Software Update"
+    message_text = f"A new version ({new_version}) is available.\n\nWould you like to install it now?"
+    
+    # Trigger the box
+    answer = messagebox.askyesno(title_text, message_text)
     
     if answer:
         perform_update()
+    
+    root.destroy()
     
     root.destroy()
 
