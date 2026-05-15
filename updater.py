@@ -5,7 +5,7 @@ from tkinter import messagebox
 import os
 
 # Configuration
-VERSION_URL = "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/version.txt"
+VERSION_URL = "https://github.com/freebstng-boop/Jacob-Services-Screensaver.git"
 LOCAL_VERSION_FILE = "version.txt"
 
 def check_for_updates():
