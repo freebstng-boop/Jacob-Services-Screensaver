@@ -1,4 +1,5 @@
 import tkinter as tk
+import os
 from time import strftime
 from PIL import Image, ImageTk, ImageDraw
 0 * * * * export DISPLAY=:0 && /usr/bin/python3 /home/pi/Jacob-Services-Screensaver/updater.py
