@@ -1,15 +1,24 @@
-import requests
+import os
 import subprocess
+import requests
 import tkinter as tk
 from tkinter import messagebox
-import os
 import time
 
-# 1. Force the display to the main monitor
-os.environ['DISPLAY'] = ':0'
+# --- FIXED FOR YOUR PI (DISPLAY :1) ---
+os.environ['DISPLAY'] = ':1'
+user = "bradleyw" # <--- Double check this is your username!
+os.environ['XAUTHORITY'] = f"/home/{user}/.Xauthority"
 
-# 2. Ensure we are in the correct directory
+try:
+    # This 'opens the door' specifically for display :1
+    subprocess.run(['xhost', '+local:'], env={'DISPLAY': ':1'}, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+except:
+    pass
+# ---------------------------------------
+
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
+# ... rest of your code
 
 # --- CONFIGURATION ---
 VERSION_URL = "https://raw.githubusercontent.com/freebstng-boop/Jacob-Services-Screensaver/main/version.txt"
