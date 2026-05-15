@@ -3,6 +3,7 @@ import subprocess
 import tkinter as tk
 from tkinter import messagebox
 import os
+os.environ['DISPLAY'] = ':0'
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
