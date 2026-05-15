@@ -1,6 +1,7 @@
 import tkinter as tk
 from time import strftime
 from PIL import Image, ImageTk, ImageDraw
+os.environ['DISPLAY'] = ':0'
 
 class Screensaver:
     def __init__(self):
