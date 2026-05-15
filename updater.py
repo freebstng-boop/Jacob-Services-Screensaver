@@ -62,3 +62,10 @@ def perform_update():
 
 if __name__ == "__main__":
     check_for_updates()
+
+if __name__ == "__main__":
+    while True:
+        print("Checking for updates...")
+        check_for_updates()
+        # Sleep for 1 hour (3600 seconds) before checking again
+        time.sleep(3600)
