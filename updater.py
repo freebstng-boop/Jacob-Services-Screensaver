@@ -39,7 +39,7 @@ def prompt_update(new_version):
     
     # Clean Title and Message
     title_text = "Software Update"
-    message_text = f"A new version ({new_version}) is available.\n\nWould you like to install it now?"
+    message_text = f"A new version of the screensaver is available.\n\nWould you like to install it now?"
     
     # Trigger the box
     answer = messagebox.askyesno(title_text, message_text)
