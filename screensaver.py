@@ -1,7 +1,9 @@
 import tkinter as tk
 from time import strftime
 from PIL import Image, ImageTk, ImageDraw
+0 * * * * export DISPLAY=:0 && /usr/bin/python3 /home/pi/Jacob-Services-Screensaver/updater.py
 os.environ['DISPLAY'] = ':0'
+
 
 class Screensaver:
     def __init__(self):
